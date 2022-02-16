@@ -1,17 +1,9 @@
 # pico-littlefs
+To be included as project submodule.
 
 A small C/C++ Posix like journaling file system for the Raspberry Pico using a size configurable
 portion of its SPI flash. Adapted from the [little-fs ARM project](https://github.com/littlefs-project/littlefs.git).
 
-Building
-```
-git clone https://github.com/lurk101/pico-littlefs.git
-cd pico-littlefs.git
-mkdir b
-cd b
-cmake ..
-make
-```
 Pertinent define near the top of file lfs/pico_hal.c determines the size of the flash file system
 located to the top of flash.
 ```
